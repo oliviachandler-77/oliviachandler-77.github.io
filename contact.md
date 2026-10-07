@@ -24,4 +24,3 @@ permalink: /contact/
   </ul>
 </div>
 
-<p class="placeholder-note">[Add any other contact details or availability information you want to share.]</p>
