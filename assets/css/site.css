@@ -1,13 +1,17 @@
 :root {
   color-scheme: light;
-  --paper: #f4efe9;
-  --paper-deep: #ebe1d7;
-  --ink: #2b211c;
-  --brown: #4b3025;
-  --brown-soft: #684a3c;
-  --accent: #754a35;
-  --line: #cdbbad;
-  --focus: #60351f;
+  --paper: #EAE1CB;
+  --paper-deep: #F2E7D8;
+  --ink: #33271F;
+  --brown: #5B3B1E;
+  --brown-soft: #735943;
+  --orange: #BC5727;
+  --accent: var(--orange);
+  --rose: #D18E97;
+  --mustard: #D2A432;
+  --olive: #979E6C;
+  --line: var(--olive);
+  --focus: var(--brown);
   --content-width: 48rem;
   --page-gutter: clamp(1.25rem, 5vw, 3rem);
 }
@@ -64,7 +68,36 @@ a:focus-visible {
 }
 
 .site-header {
-  border-bottom: 1px solid var(--line);
+  position: relative;
+  border-bottom: 0;
+  background: rgba(209, 142, 151, 0.2);
+  --rule-color: var(--mustard);
+}
+
+.site-header::after,
+.site-footer::before,
+.home-highlights::before,
+.content-section::before,
+.timeline-entry::before,
+.contact-block::before,
+.role-list li::after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 8px;
+  background-color: var(--rule-color, var(--accent));
+  -webkit-mask-image: url("../images/squiggle.svg");
+  mask-image: url("../images/squiggle.svg");
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+  -webkit-mask-size: 40px 8px;
+  mask-size: 40px 8px;
+  pointer-events: none;
+  content: "";
+}
+
+.site-header::after {
+  bottom: -4px;
 }
 
 .header-inner,
@@ -107,17 +140,18 @@ a:focus-visible {
 }
 
 .nav-list a {
+  display: inline-block;
+  padding: 0.22rem 0.45rem;
+  border-radius: 999px;
   color: var(--brown-soft);
   font-size: 0.9rem;
   text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease;
 }
 
 .nav-list a[aria-current="page"] {
   color: var(--ink);
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.35rem;
+  background: var(--rose);
 }
 
 .site-main {
@@ -133,7 +167,9 @@ a:focus-visible {
 .eyebrow,
 .entry-meta {
   margin: 0 0 0.8rem;
-  color: var(--brown-soft);
+  padding-left: 0.55rem;
+  border-left: 3px solid var(--accent);
+  color: var(--brown);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -181,9 +217,10 @@ p {
   aspect-ratio: 1;
   margin: 0 0 1.75rem;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 0.3rem;
+  border: 2px solid var(--mustard);
+  border-radius: 1rem 1rem 1rem 0.3rem;
   background: var(--paper-deep);
+  box-shadow: 0.45rem 0.45rem 0 var(--rose);
 }
 
 .home-portrait img {
@@ -220,9 +257,53 @@ p {
   font-weight: 700;
 }
 
+.home-actions .text-link {
+  display: inline-flex;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--brown);
+  border-radius: 999px;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--mustard);
+  text-decoration: none;
+}
+
+.home-actions .text-link:nth-child(2) {
+  background: var(--rose);
+}
+
+.home-actions .text-link:hover {
+  background: var(--brown);
+  color: var(--paper);
+}
+
 .home-highlights,
 .content-section {
   margin-top: clamp(3.5rem, 8vw, 5.5rem);
+}
+
+.home-highlights {
+  position: relative;
+  padding: 2rem 1.5rem 1.35rem;
+  border: 1px solid rgba(91, 59, 30, 0.22);
+  border-radius: 0.85rem;
+  background: rgba(209, 142, 151, 0.2);
+  --rule-color: var(--accent);
+}
+
+.home-highlights::before {
+  top: 0;
+  right: 1.5rem;
+  left: 1.5rem;
+}
+
+.content-section {
+  position: relative;
+  --rule-color: var(--mustard);
+}
+
+.content-section::before {
+  top: -0.85rem;
 }
 
 .home-highlights h2 {
@@ -253,20 +334,24 @@ p {
 
 .placeholder-note,
 .placeholder-panel {
-  border-left: 3px solid var(--accent);
-  background: var(--paper-deep);
+  border-left: 4px solid var(--rose);
+  background: rgba(209, 142, 151, 0.2);
+  color: var(--brown);
 }
 
 .placeholder-note {
   margin-top: 3.5rem;
   padding: 1rem 1.2rem;
-  color: var(--brown-soft);
+  border-radius: 0 0.8rem 0.8rem 0;
   font-size: 0.92rem;
 }
 
 .placeholder-panel {
   margin-top: 2rem;
   padding: 1.25rem 1.4rem 0.35rem;
+  border-left-color: var(--olive);
+  background: rgba(151, 158, 108, 0.2);
+  border-radius: 0 0.8rem 0.8rem 0;
 }
 
 .placeholder-panel p:last-child {
@@ -274,9 +359,14 @@ p {
 }
 
 .timeline-entry {
+  position: relative;
   margin-top: 2rem;
   padding-top: 1.4rem;
-  border-top: 1px solid var(--line);
+  --rule-color: var(--mustard);
+}
+
+.timeline-entry::before {
+  top: 0;
 }
 
 .entry-meta {
@@ -287,17 +377,21 @@ p {
 .role-list {
   margin: 0;
   padding: 0;
-  border-top: 1px solid var(--line);
   list-style: none;
 }
 
 .role-list li {
+  position: relative;
   display: flex;
   padding: 0.85rem 0;
-  border-bottom: 1px solid var(--line);
   align-items: baseline;
   justify-content: space-between;
   gap: 1rem;
+  --rule-color: var(--olive);
+}
+
+.role-list li::after {
+  bottom: 0;
 }
 
 .role-list span {
@@ -315,9 +409,14 @@ p {
 }
 
 .contact-block {
+  position: relative;
   margin-top: 2.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
+  --rule-color: var(--orange);
+}
+
+.contact-block::before {
+  top: 0;
 }
 
 .contact-block h2 {
@@ -336,7 +435,14 @@ p {
 }
 
 .site-footer {
-  border-top: 1px solid var(--line);
+  position: relative;
+  border-top: 0;
+  background: rgba(151, 158, 108, 0.16);
+  --rule-color: var(--olive);
+}
+
+.site-footer::before {
+  top: 0;
 }
 
 .footer-inner {
@@ -375,6 +481,7 @@ p {
 
   .nav-list a {
     font-size: 0.82rem;
+    padding-inline: 0.3rem;
   }
 
   .role-list li {
