@@ -34,4 +34,3 @@ permalink: /
   </ul>
 </section>
 
-<p class="placeholder-note"><strong>Draft note:</strong> [Add a personal introduction or the work you want visitors to remember.]</p>
