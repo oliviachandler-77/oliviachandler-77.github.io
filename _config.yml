@@ -1,0 +1,30 @@
+title: Olivia Chandler
+description: Olivia Chandler’s portfolio at the intersection of fashion, luxury, and AI.
+url: "https://oliviachandler-77.github.io"
+baseurl: ""
+lang: en-US
+timezone: America/Los_Angeles
+markdown: kramdown
+permalink: pretty
+exclude:
+  - .agents
+  - .cache
+  - .local
+  - .pythonlibs
+  - .upm
+  - README.md
+  - PLAN.md
+  - Gemfile
+  - Gemfile.lock
+  - artifacts
+  - attached_assets
+  - lib
+  - node_modules
+  - package.json
+  - pnpm-lock.yaml
+  - pnpm-workspace.yaml
+  - replit.md
+  - scripts
+  - tsconfig.base.json
+  - tsconfig.json
+  - vendor
