@@ -1,30 +1,27 @@
 title: Olivia Chandler
-description: Olivia Chandler’s portfolio at the intersection of fashion, luxury, and AI.
+description: >-
+  Olivia Chandler is an MBA candidate at UC Berkeley Haas and a former Salesforce
+  account executive working at the intersection of technology, AI, and growth.
 url: "https://oliviachandler-77.github.io"
 baseurl: ""
-lang: en-US
-timezone: America/Los_Angeles
+lang: en
 markdown: kramdown
 permalink: pretty
+theme: null
+
 exclude:
-  - .agents
+  - attached_assets
+  - node_modules
+  - vendor
+  - _site
+  - .bundle
   - .cache
   - .local
-  - .pythonlibs
-  - .upm
-  - README.md
-  - PLAN.md
+  - .agents
+  - .replit
+  - .replitignore
   - Gemfile
   - Gemfile.lock
-  - artifacts
-  - attached_assets
-  - lib
-  - node_modules
-  - package.json
-  - pnpm-lock.yaml
-  - pnpm-workspace.yaml
+  - README.md
+  - PLAN.md
   - replit.md
-  - scripts
-  - tsconfig.base.json
-  - tsconfig.json
-  - vendor

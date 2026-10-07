@@ -1,56 +1,38 @@
 ---
 layout: default
 title: About
-description: Learn more about Olivia Chandler.
+description: Olivia Chandler's education, interests, and professional background.
+permalink: /about/
 ---
 
-<section class="page-heading" aria-labelledby="page-title">
-  <p class="eyebrow">About</p>
-  <h1 id="page-title">I like ambitious ideas that become useful.</h1>
-  <p class="page-intro">I bring a commercial lens to emerging technology, with a growing focus on the future of fashion, beauty, and luxury.</p>
+<p class="eyebrow">A little context</p>
+<h1>About</h1>
+
+<p class="page-lede">I’m an MBA candidate at UC Berkeley Haas with a background in strategic communications and technology sales.</p>
+
+<div class="placeholder-panel">
+  <p class="eyebrow">In my own words</p>
+  <p>[Add a short personal bio, what motivates your work, or what you are exploring now.]</p>
+</div>
+
+<section class="content-section" aria-labelledby="education-title">
+  <h2 id="education-title">Education</h2>
+  <article class="timeline-entry">
+    <p class="entry-meta">Expected May 2027</p>
+    <h3>University of California, Berkeley — Haas School of Business</h3>
+    <p>Master of Business Administration</p>
+    <p>AI Certificate in Technology, Strategy, Management, and Impact. President of the Beauty &amp; Luxury Consumer Products Club; member of the Tech Club, AI Club, and Women in Leadership Club.</p>
+  </article>
+  <article class="timeline-entry">
+    <p class="entry-meta">May 2020</p>
+    <h3>University of Colorado Boulder — College of Media, Communication &amp; Information</h3>
+    <p>Bachelor of Science in Strategic Communications; minor in Business through the Leeds School of Business.</p>
+    <p>Student fundraiser at The Alumni Foundation and event coordinator at the Leeds School of Business.</p>
+  </article>
 </section>
 
-<section class="content-section section-rule" aria-labelledby="story-title">
-  <div class="section-label">
-    <span>01</span>
-    <span>My story</span>
-  </div>
-  <div class="prose">
-    <h2 id="story-title">From technology strategy to fashion’s next chapter.</h2>
-    <p>I’m currently pursuing an MBA at the University of California, Berkeley’s Haas School of Business, where I’m completing an AI Certificate focused on technology, strategy, management, and impact.</p>
-    <p>Before Haas, I spent seven years at Salesforce across sales development, business development, and account executive roles. I worked with early-stage startups, growth businesses, and enterprise organizations to connect technology decisions with measurable business outcomes.</p>
-    <p>That experience shaped how I think: start with the human need, make the system practical, and stay honest about the trade-offs.</p>
-  </div>
-</section>
-
-<section class="content-section section-rule" aria-labelledby="focus-title">
-  <div class="section-label">
-    <span>02</span>
-    <span>What I care about</span>
-  </div>
-  <div class="prose">
-    <h2 id="focus-title">A future-facing, people-first approach.</h2>
-    <p>I’m especially interested in roles at the intersection of fashion and AI — work that combines customer insight, creative thinking, operational clarity, and responsible technology adoption.</p>
-    <p>At Haas, I serve as President of the Beauty &amp; Luxury Consumer Products Club and participate in the Tech Club, AI Club, and Women in Leadership Club.</p>
-  </div>
-</section>
-
-<section class="content-section section-rule" aria-labelledby="education-title">
-  <div class="section-label">
-    <span>03</span>
-    <span>Education</span>
-  </div>
-  <div class="prose">
-    <h2 id="education-title">Learning across business, technology, and communication.</h2>
-    <div class="credential-list">
-      <div class="credential">
-        <p class="credential-school">UC Berkeley, Haas School of Business</p>
-        <p class="credential-detail">Master’s in Business Administration · Expected May 2027</p>
-      </div>
-      <div class="credential">
-        <p class="credential-school">University of Colorado Boulder</p>
-        <p class="credential-detail">B.S. Strategic Communications, Minor in Business · May 2020</p>
-      </div>
-    </div>
-  </div>
+<section class="content-section" aria-labelledby="interests-title">
+  <h2 id="interests-title">Outside the role</h2>
+  <p>At Salesforce, I was elected Co-President of the Salesforce Women’s Network. I organized fundraising events that raised approximately $20,000 and planned a mentorship event for 50 women featuring five female executives.</p>
+  <p>[Add personal interests, community work, or anything else you would like to share.]</p>
 </section>

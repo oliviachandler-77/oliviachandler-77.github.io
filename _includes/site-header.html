@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Olivia Chandler home">OC<span>.</span></a>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        {% assign navigation_pages = "About|/about/,Work Experience|/experience/,Contact|/contact/" | split: "," %}
+        {% for item in navigation_pages %}
+          {% assign parts = item | split: "|" %}
+          <li>
+            <a href="{{ parts[1] | relative_url }}"{% if page.url == parts[1] %} aria-current="page"{% endif %}>{{ parts[0] }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

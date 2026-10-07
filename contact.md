@@ -1,13 +1,27 @@
 ---
 layout: default
 title: Contact
-description: Contact Olivia Chandler by email.
+description: Contact Olivia Chandler by email, LinkedIn, or GitHub.
+permalink: /contact/
 ---
 
-<section class="contact-page" aria-labelledby="page-title">
-  <p class="eyebrow">Contact</p>
-  <h1 id="page-title">Let’s start a conversation.</h1>
-  <p class="page-intro">For questions, opportunities, or a thoughtful hello, email is the best way to reach me.</p>
-  <a class="email-link" href="mailto:Olivia.chandler@berkeley.edu">Olivia.chandler@berkeley.edu <span aria-hidden="true">↗</span></a>
-  <p class="small-note">This email address is public. The link works best when you have an email app configured on your device.</p>
-</section>
+<p class="eyebrow">Start a conversation</p>
+<h1>Contact</h1>
+
+<p class="page-lede">For professional inquiries, reach me by email or connect on LinkedIn.</p>
+
+<div class="contact-block">
+  <h2>Email</h2>
+  <p><a class="text-link" href="mailto:olivia.chandler@berkeley.edu">olivia.chandler@berkeley.edu</a></p>
+  <p class="small-note">This is a public email link. It opens the visitor’s configured email app.</p>
+</div>
+
+<div class="contact-block">
+  <h2>Elsewhere</h2>
+  <ul class="plain-list">
+    <li><a href="https://www.linkedin.com/in/olivia-m-chandler/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
+    <li><a href="https://github.com/oliviachandler-77" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
+  </ul>
+</div>
+
+<p class="placeholder-note">[Add any other contact details or availability information you want to share.]</p>
