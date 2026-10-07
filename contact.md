@@ -19,7 +19,7 @@ permalink: /contact/
 <div class="contact-block">
   <h2>Elsewhere</h2>
   <ul class="plain-list">
-    <li><a href="https://www.linkedin.com/in/olivia-m-chandler/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></li>
+    <li><a href="https://www.linkedin.com/in/olivia-m-chandler/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/olivia-m-chandler/</a></li>
     <li><a href="https://github.com/oliviachandler-77" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
   </ul>
 </div>

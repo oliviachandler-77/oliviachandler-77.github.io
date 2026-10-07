@@ -6,6 +6,15 @@ permalink: /
 ---
 
 <p class="eyebrow">MBA candidate · Former Salesforce account executive</p>
+<figure class="home-portrait">
+  <img
+    src="{{ '/assets/images/olivia-chandler.jpeg' | relative_url }}"
+    alt="Olivia Chandler smiling outdoors"
+    width="800"
+    height="800"
+    fetchpriority="high"
+  >
+</figure>
 <h1 class="home-title">Olivia Chandler</h1>
 <p class="home-lede">Bringing together technology, AI, and growth strategy.</p>
 

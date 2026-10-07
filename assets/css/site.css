@@ -176,6 +176,23 @@ p {
   font-size: clamp(3.2rem, 11vw, 6rem);
 }
 
+.home-portrait {
+  width: clamp(9rem, 32vw, 13rem);
+  aspect-ratio: 1;
+  margin: 0 0 1.75rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.3rem;
+  background: var(--paper-deep);
+}
+
+.home-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .home-lede,
 .page-lede {
   max-width: 40rem;
