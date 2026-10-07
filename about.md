@@ -35,5 +35,4 @@ permalink: /about/
 <section class="content-section" aria-labelledby="interests-title">
   <h2 id="interests-title">Outside the role</h2>
   <p>At Salesforce, I was elected Co-President of the Salesforce Women’s Network. I organized fundraising events that raised approximately $20,000 and planned a mentorship event for 50 women featuring five female executives.</p>
-  <p>[Add personal interests, community work, or anything else you would like to share.]</p>
 </section>
