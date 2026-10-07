@@ -12,7 +12,8 @@ permalink: /about/
 
 <div class="placeholder-panel">
   <p class="eyebrow">In my own words</p>
-  <p>[Add a short personal bio, what motivates your work, or what you are exploring now.]</p>
+  <p>Current MBA student interested in Technology, AI, E-Commerce, and Sustainability.</p>
+  <p>Through my prior experience at Salesforce, I specialize in creating unique technical roadmaps for rising technology start-ups through deeply understanding their challenges and long-term vision.</p>
 </div>
 
 <section class="content-section" aria-labelledby="education-title">
